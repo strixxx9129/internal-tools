@@ -234,8 +234,3 @@ reason the frontend components are all generic (the `Table`, `Modal`,
 - **Roles are enforced on the server, not hidden in the UI.** The buttons are
   hidden for unauthorized roles, but the API checks again — e.g. a `member`
   calling `DELETE /api/tasks/{id}` directly gets a 403.
-
-## Tests
-
-I didn't write an automated test suite (it was in the bonus list). The API was
-exercised manually through Swagger UI and HTTP clients during development.
